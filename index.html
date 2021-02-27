@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeafLet POC</title>
+
+    <!-- styles de leafleat  -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+
+    <!-- style de bootstrap pour aider à la présentation du POC  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+    <!-- style perso  -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- le container du canvas de la map, modifiable dans ./map.js  -->
+    <div id="map"></div>
+
+    <!-- le container d'informations du point sélectionné, modifiable dans ./main.js  -->
+    <div id="content"></div>
+
+    <!-- scripts de leaflet en premier -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+
+    <!-- la liste des points (à retrouver via Google Map par exemple, en inspectant un point sur la carte) -->
+    <script src="pointList.js"></script>
+
+    <!-- l'instance de la map leafleat  -->
+    <script src="map.js"></script>
+
+    <!-- le JS pour piloter l'affichage des infos  -->
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+}
+#map {
+  width: 100vw;
+  height: 50vh;
+}
+#content {
+  width: 100vw;
+  height: 50vh;
+}
